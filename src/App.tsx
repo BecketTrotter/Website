@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Project from './Project';
 import ReactPageScroller from 'react-page-scroller';
-import _ from "lodash";
 import './App.css'
 
 const baseProjects = [

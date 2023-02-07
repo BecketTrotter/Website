@@ -1,0 +1,64 @@
+:root {
+    --main-bg-color: #383838;
+    --main-bg-color-transparent: rgba(0,0,0,.75);
+    --text-color: #ffffff
+  }
+
+:root {
+    --main-bg-color: #ffffff;
+    --main-bg-color-transparent: rgba(255,255,255,.75);
+    --text-color: #383838;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+html{
+    overflow: hidden;
+    height: 100%;
+    overflow:hidden;
+    overscroll-behavior: auto;
+    overscroll-behavior-block: auto;
+}
+
+.header{
+    position: absolute;
+    width: 100%;
+    height: 5%;
+    vertical-align: middle;
+    z-index: 1;
+    top: 0;
+    background-color: var(--main-bg-color-transparent);
+    color: var(--text-color);
+}
+
+.expandDiv {
+    color: var(--text-color);
+    overscroll-behavior: inherit;
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    border-radius: 15%;
+    background: var(--main-bg-color-transparent);
+    top: 30%;
+    left: 48%;
+}
+
+.projectDescription {
+    border-radius: 1%;
+    touch-action: none;
+    pointer-events: none;
+    animation: fadeIn 1s;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    color: black;
+    background: var(--main-bg-color-transparent);
+}

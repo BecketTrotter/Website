@@ -84,7 +84,7 @@ const App: React.FC = () => {
     )
 
     const ProjectDescription = (
-      <div className='projectDescription'> <div style={{margin:'8px'}}> {projects[projectIndex].description}</div> </div>
+      <div className='projectDescription' onClick={handleClick}> <div style={{margin:'8px'}}> {projects[projectIndex].description}</div> </div>
     )
  
     

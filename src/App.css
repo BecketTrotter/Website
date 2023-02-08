@@ -52,12 +52,12 @@ html{
 
 .projectDescription {
     border-radius: 1%;
-    touch-action: none;
-    pointer-events: none;
     animation: fadeIn 1s;
     position: absolute;
     bottom: 0;
     right: 0;
+    max-height: 40%;
+    overflow: scroll;
     color: var(--text-color);
     background: var(--main-bg-color-transparent);
 }

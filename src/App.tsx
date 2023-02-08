@@ -116,7 +116,7 @@ const App: React.FC = () => {
       <MobileView>
         <ReactPageScroller animationTimer={800} renderAllPagesOnFirstRender={true} pageOnChange={onPageChange}>
           {projects.map((item) => {
-            return <Project mobile={item.mobile} key={item.id} projectName={item.projectName} src={item.src} expanded={item.expanded} />
+            return <Project mobile={item.mobile} key={item.id} projectName={item.projectName} src={item.mobile} expanded={item.expanded} />
           })}
         </ReactPageScroller>
         {Header}

@@ -72,7 +72,7 @@ const App: React.FC = () => {
   }
 
   const Header = (<div className="header">
-  <p style={{ margin: '8px' }}> Henry Trotter - Project: <strong style={{ color: 'red' }}> {projectName} </strong> <span style={{ float: 'right' }}>{projectIndex + 1}{' /  ' + totalProjects} </span></p>
+  <p style={{ margin: '8px', textAlign: 'center' }}> Henry Trotter - Project: <strong style={{ color: 'red' }}> {projectName} </strong> <span style={{ float: 'right' }}>{projectIndex + 1}{' /  ' + totalProjects} </span></p>
 </div>)
     
     const ExpandDescription = (

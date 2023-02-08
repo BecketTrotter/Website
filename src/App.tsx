@@ -62,6 +62,21 @@ const App: React.FC = () => {
   const [projectName, setProjectName] = useState(baseProjects[0].projectName);
   const [projects, setProjects] = useState(baseProjects);
 
+  const [width, setWidth] = useState<number>(window.innerWidth);
+
+  function handleWindowSizeChange() {
+      setWidth(window.innerWidth);
+      console.log('width: ' + width)
+  }
+  useEffect(() => {
+      window.addEventListener('resize', handleWindowSizeChange);
+      return () => {
+          window.removeEventListener('resize', handleWindowSizeChange);
+      }
+  }, []);
+
+  const isMobile = width <= 768;
+
 
   function onPageChange(event: number) {
     setProjectIndex(event);

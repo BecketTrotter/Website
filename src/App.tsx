@@ -72,8 +72,7 @@ const App: React.FC = () => {
   }
 
   const handleClick = () => {
-    console.log('click')
-    setExpanded(true)
+    setExpanded(!expanded)
   }
 
   const Header = (<div className="header">

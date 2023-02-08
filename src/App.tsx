@@ -8,8 +8,8 @@ const baseProjects = [
   {
     id: 0,
     projectName: 'Bio',
-    src: 'https://personal-website-videos.s3.us-east-2.amazonaws.com/ojo.mov',
-    mobile: 'https://personal-website-videos.s3.us-east-2.amazonaws.com/ojo_mobile.mov',
+    src: 'https://personal-website-videos.s3.us-east-2.amazonaws.com/ojo.mp4',
+    mobile: 'https://personal-website-videos.s3.us-east-2.amazonaws.com/ojo_mobile.mp4',
     description:<p> As an experienced software developer with TS/SCI clearance, I have a proven track record of delivering complex projects for government agencies. My expertise in big data analytics, data pipeline development, and front-end development have enabled me to create innovative solutions that meet the unique needs of my clients.
     <br/><br/>
     In my most recent role, I worked on <strong style={{color: "red"}}>Poseidon</strong><strong className="programDescription">, a State Department project aimed at detecting North Korean smuggling through big data analytics.</strong> I leveraged my skills in AWS, Django, and Python to build a system that provided valuable insights and actionable intelligence. I was able to demonstrate my ability to work effectively in a fast-paced, high-pressure environment, delivering results that exceeded expectations.

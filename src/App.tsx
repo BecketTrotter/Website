@@ -63,20 +63,19 @@ const App: React.FC = () => {
   const [projects, setProjects] = useState(baseProjects);
 
   const [width, setWidth] = useState<number>(window.innerWidth);
+  const [height, setHeight] = useState<number>(window.innerHeight);
 
   function handleWindowSizeChange() {
       setWidth(window.innerWidth);
-      console.log('width: ' + width)
+      setHeight(window.innerHeight);
   }
+
   useEffect(() => {
       window.addEventListener('resize', handleWindowSizeChange);
       return () => {
           window.removeEventListener('resize', handleWindowSizeChange);
       }
   }, []);
-
-  const isMobile = width <= 768;
-
 
   function onPageChange(event: number) {
     setProjectIndex(event);
@@ -102,26 +101,18 @@ const App: React.FC = () => {
     <div className='projectDescription' onClick={handleClick}> <div style={{ margin: '8px' }}> {projects[projectIndex].description}</div> </div>
   )
 
+  const badRatio = (width / height) < (16 / 9)
+
   return (
     <div>
-      <BrowserView>
         <ReactPageScroller animationTimer={800} renderAllPagesOnFirstRender={true} pageOnChange={onPageChange}>
           {projects.map((item) => {
-            return <Project mobile={item.mobile} key={item.id} projectName={item.projectName} src={item.src} expanded={item.expanded} />
+            return <Project key={item.id} projectName={item.projectName} src={badRatio? item.mobile : item.src} />
           })}
         </ReactPageScroller>
         {Header}
         {expanded ? ProjectDescription : ExpandDescription}
-      </BrowserView>
-      <MobileView>
-        <ReactPageScroller animationTimer={800} renderAllPagesOnFirstRender={true} pageOnChange={onPageChange}>
-          {projects.map((item) => {
-            return <Project mobile={item.mobile} key={item.id} projectName={item.projectName} src={item.mobile} expanded={item.expanded} />
-          })}
-        </ReactPageScroller>
-        {Header}
-        {expanded ? ProjectDescription : ExpandDescription}
-      </MobileView> </div>
+      </div>
   );
 };
 

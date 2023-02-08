@@ -45,7 +45,7 @@ html{
     height: 50px;
     width: 50px;
     border-radius: 15%;
-    background: var(--main-bg-color-transparent);
+    background: var(255,255,255,.85);
     top: 30%;
     left: 48%;
 }

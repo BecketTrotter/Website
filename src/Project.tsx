@@ -10,7 +10,7 @@ const Project: React.FC<Props> = ({ projectName, src, expanded }) => {
   return (
     <div>
       {(src.endsWith('.mov') || src.endsWith('.mp4')) ? (
-        <video autoPlay muted loop src={src} style={{ width: '100%' }} />
+        <video preload={"auto"} autoPlay muted loop src={src} style={{ width: '100%' }} />
       ) : (
         <img src={src} alt={projectName} style={{ width: '100%' }} />
       )}

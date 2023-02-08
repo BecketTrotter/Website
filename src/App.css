@@ -1,14 +1,13 @@
 :root {
-    --main-bg-color: #383838;
-    --main-bg-color-transparent: rgba(0,0,0,.75);
-    --text-color: #ffffff
-  }
-
-:root {
     --main-bg-color: #ffffff;
     --main-bg-color-transparent: rgba(255,255,255,.75);
     --text-color: #383838;
 }
+:root {
+    --main-bg-color: #383838;
+    --main-bg-color-transparent: rgba(0,0,0,.75);
+    --text-color: #ffffff
+  }
 
 @keyframes fadeIn {
     0% {
@@ -59,6 +58,6 @@ html{
     position: absolute;
     bottom: 0;
     right: 0;
-    color: black;
+    color: var(--text-color);
     background: var(--main-bg-color-transparent);
 }

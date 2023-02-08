@@ -10,14 +10,16 @@ const baseProjects = [
     projectName: 'Bio',
     src: 'https://personal-website-videos.s3.us-east-2.amazonaws.com/ojo.mov',
     mobile: 'https://personal-website-videos.s3.us-east-2.amazonaws.com/ojo_mobile.mov',
-    description: <p>
-      As a seasoned professional in the field of software development, I have experience working as a contractor for organizations such as DARPA and Joint Special Operations Command. <br /><br />
-      My time contracting for DARPA was spent with Jataware, where I was a key player in several innovative projects aimed at utilizing data analytics and modeling to solve complex problems. In one such project, I was part of a team that developed a framework for standardizing machine learning models and connecting them to a vast repository of trained models and datasets. This project was funded by DARPA and later continued in collaboration with the Gates Foundation.
-      <br /><br />
-      I then transitioned to Iron Eagle X, where I support the Joint Special Operations Command as a software developer. My work involves designing, developing and delivering cutting-edge software solutions that meet the unique needs of the Special Operations community. With my strong background in software development and a proven track record of delivering mission-critical solutions, I am well equipped to handle any challenge that comes my way.
-      <br /><br />
-      With my extensive experience in software development, I bring a wealth of knowledge and a commitment to excellence to every project I work on. I am always seeking new and challenging opportunities to grow as a professional and am passionate about using technology to solve real-world problems.
-    </p>,
+    description:<p> As an experienced software developer with TS/SCI clearance, I have a proven track record of delivering complex projects for government agencies. My expertise in big data analytics, data pipeline development, and front-end development have enabled me to create innovative solutions that meet the unique needs of my clients.
+    <br/><br/>
+    In my most recent role, I worked on Poseidon, <strong className="programDescription">a State Department project aimed at detecting North Korean smuggling through big data analytics.</strong> I leveraged my skills in AWS, Django, and Python to build a system that provided valuable insights and actionable intelligence. I was able to demonstrate my ability to work effectively in a fast-paced, high-pressure environment, delivering results that exceeded expectations.
+    <br/><br/>
+    In addition to my work on Poseidon, I have also played a critical role in World Modelers, <strong className="programDescription">a DARPA program aimed at programatically standardizing existing machine learning models and their corresponding input/output.</strong> I was responsible for creating a standardized data schema, and data annotation process. This allowed us to convert hundreds of datasets into the same schema, enabling them to be used in any of our standarized models. This work showcased my ability to think creatively and solve complex problems in a highly technical field.
+    <br/><br/>
+    Finally, I have also been involved in <strong className="programDescription">classified work supporting the Joint Special Operations Command [JSOC]</strong>. My expertise in software development and my ability to work with sensitive and confidential information have made me a valuable asset to this organization.
+    <br/><br/>
+    Overall, my extensive experience and proven ability to deliver results make me an ideal candidate for any project that requires a highly skilled and experienced software developer.</p>
+    ,
     expanded: false
   },
   {

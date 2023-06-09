@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 
 interface Props {
   projectName: string;
@@ -6,10 +6,27 @@ interface Props {
 }
 
 const Project: React.FC<Props> = ({ projectName, src }) => {
+  const videoRef = useRef<HTMLVideoElement>(null);
+
+  useEffect(() => {
+    const videoElement = videoRef.current;
+    if (videoElement) {
+      videoElement.muted = true;
+    }
+  }, []);
+
   return (
-    <div>
-        <video preload={"auto"} playsInline={true} autoPlay muted loop src={src} style={{ width: '100%', height: '100%' }} />
-    </div>
+    <div className={`videoContainer`} dangerouslySetInnerHTML={{
+      __html: `
+    <video
+      muted
+      autoplay
+      loop
+      playsinline
+      src="${src}"   
+    />`
+  }}
+  />
   );
 };
 

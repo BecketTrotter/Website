@@ -46,6 +46,14 @@ const baseProjects = [
       The impact of Dojo was evident in the follow-up contract, ASKEM, which further solidifies its value to the research community.</p>,
     expanded: false
   },
+  {
+    id: 3,
+    projectName: 'JSOC',
+    src: 'https://personal-website-videos.s3.us-east-2.amazonaws.com/JSOC.mp4',
+    mobile: 'https://personal-website-videos.s3.us-east-2.amazonaws.com/JSOC_mobile.mov',
+    description: <p>Our team contributed to the JSOC (Joint Special Operations Command) by developing and supporting a cutting-edge framework designed to enhance operational capabilities.<br/><br/> This project, undertaken with the support of classified programs and organizations, aimed to standardize and streamline critical machine learning models and associated data. By centralizing and connecting registered models and datasets, we created a comprehensive repository of trained models and valuable information, strengthening JSOC's analytical capabilities and decision-making processes.<br/><br/> Our collaboration with top experts and researchers, alongside the dedication of our team, ensured the successful implementation of this framework within the classified environment. The significant impact and value of our work were evident in subsequent contracts and projects that further solidified the framework's relevance and impact on JSOC's mission.</p>,
+    expanded: false
+  },
 ];
 
 const LandingPage: React.FC = () => {

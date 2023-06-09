@@ -19,6 +19,7 @@ const Project: React.FC<Props> = ({ projectName, src }) => {
     <div className={`videoContainer`} dangerouslySetInnerHTML={{
       __html: `
     <video
+      preload="auto"
       muted
       autoplay
       loop

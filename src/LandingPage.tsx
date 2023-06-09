@@ -16,7 +16,7 @@ const baseProjects = [
     <br/><br/>
     In addition to my work on Poseidon, I have also played a critical role in <strong style={{color: "red"}}>World Modelers</strong><strong className="programDescription">, a DARPA program aimed at programatically standardizing existing machine learning models and their corresponding input/output.</strong> I was responsible for creating a standardized data schema, and data annotation process. This allowed us to convert hundreds of datasets into the same schema, enabling them to be used in any of our standarized models. This work showcased my ability to think creatively and solve complex problems in a highly technical field.
     <br/><br/>
-    Finally, I have also been involved in <strong style={{color: "red"}}>classified work</strong><strong className="programDescription"> supporting the Joint Special Operations Command [JSOC]</strong>. My expertise in software development and my ability to work with sensitive and confidential information have made me a valuable asset to this organization.
+    Finally, I have also been involved in <strong style={{color: "red"}}>technical work</strong><strong className="programDescription"> supporting the Joint Special Operations Command [JSOC]</strong>. My expertise in software development and my ability to work with sensitive and confidential information have made me a valuable asset to this organization.
     <br/><br/>
     Overall, my extensive experience and proven ability to deliver results make me an ideal candidate for any project that requires a highly skilled and experienced software developer.</p>
     ,
